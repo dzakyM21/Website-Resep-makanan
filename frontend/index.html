@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resep Makanan</title>
+  <p id="status"></p>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div>
+ <!-- tombol login -->
+  <a href="login.html"><button>Login</button></a>
+
+<!-- tombol register -->
+  <a href="register.html"><button>Register</button></a>
+
+ <!-- tombol logout -->
+  <div style="text-align:right;">
+   <button onclick="logout()">Logout</button>
+
+</div>
+
+<hr>
+  <div class="container">
+  <h1>🍽️ Resep Makanan</h1>
+
+  <div class="search-box">
+    <input id="search" placeholder="Cari resep..." />
+    <button onclick="searchRecipes()">Cari</button>
+  </div>
+
+  <div id="recipes"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
